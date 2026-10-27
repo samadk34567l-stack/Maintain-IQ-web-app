@@ -1,0 +1,3 @@
+.storage-banner { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 24px; background: var(--amber-50); border-bottom: 1px solid #fde68a; color: var(--amber-700); font-size: 12.5px; }
+.storage-banner-text { display: flex; align-items: center; gap: 8px; }
+.storage-banner-dismiss { font-weight: 600; text-decoration: underline; color: inherit; }

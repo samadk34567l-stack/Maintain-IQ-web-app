@@ -1,0 +1,8 @@
+.maint-filters { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.maint-tech { min-width: 200px; }
+.maint-tech-card { padding: 12px 14px; background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); }
+.maint-tech-stats { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--slate-600); }
+.maint-tech-stats b { color: var(--navy-900); }
+.maint-tech-stats em { font-style: normal; color: var(--amber-700); font-weight: 600; }
+.maint-tech-stats em.danger { color: var(--rose-700); }
+.maint-work { min-width: 220px; max-width: 360px; font-size: 12px; line-height: 1.45; }

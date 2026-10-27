@@ -1,0 +1,7 @@
+.toast-stack { position: fixed; right: 20px; bottom: 20px; z-index: 60; display: flex; flex-direction: column; gap: 8px; max-width: 384px; }
+.toast { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: var(--radius-lg); background: var(--navy-900); color: var(--white); font-size: 12.5px; box-shadow: var(--shadow-lg); border-left: 4px solid var(--blue-500); }
+.toast-auth { border: 1px solid var(--navy-700); border-left: 4px solid #10b981; }
+.toast-icon { flex-shrink: 0; color: #34d399; }
+.toast-message { flex: 1; }
+.toast-close { color: var(--slate-400); }
+.toast-close:hover:not(:disabled) { background: rgba(255, 255, 255, 0.1); color: var(--white); }

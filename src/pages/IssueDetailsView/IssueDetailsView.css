@@ -1,0 +1,22 @@
+.issue-desc { font-size: 13px; line-height: 1.65; color: var(--navy-800); }
+.issue-h3 { margin-bottom: 8px; font-size: 12px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; color: var(--slate-500); }
+.issue-ai-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+@media (min-width: 700px) { .issue-ai-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.issue-record { padding: 12px 14px; background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); }
+.issue-record-dl { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 6px 12px; margin-top: 10px; font-size: 12.5px; }
+.issue-record-dl dt { font-weight: 600; color: var(--slate-500); }
+.issue-record-dl dd { color: var(--navy-900); }
+.issue-timeline { list-style: none; padding: 8px 16px; }
+.issue-timeline li { padding: 10px 0 10px 14px; border-left: 2px solid var(--slate-200); }
+
+/* Workflow stepper */
+.issue-steps { display: flex; margin-top: 20px; list-style: none; overflow-x: auto; padding-bottom: 4px; }
+.issue-step { position: relative; flex: 1 1 0; min-width: 96px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
+.issue-step::before { content: ''; position: absolute; top: 12px; left: -50%; width: 100%; height: 2px; background: var(--slate-200); z-index: 0; }
+.issue-step:first-child::before { display: none; }
+.issue-step.done::before, .issue-step.current::before { background: var(--blue-600); }
+.issue-step-dot { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; font-size: 11px; font-weight: 800; color: var(--slate-500); background: var(--white); border: 2px solid var(--slate-300); border-radius: 50%; }
+.issue-step.done .issue-step-dot { color: var(--white); background: var(--blue-600); border-color: var(--blue-600); }
+.issue-step.current .issue-step-dot { color: var(--blue-700); border-color: var(--blue-600); box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15); }
+.issue-step-label { font-size: 11px; font-weight: 600; color: var(--slate-500); line-height: 1.25; }
+.issue-step.current .issue-step-label, .issue-step.done .issue-step-label { color: var(--navy-900); }

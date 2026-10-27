@@ -1,0 +1,10 @@
+.assets-view .data-table tbody tr { transition: background-color .15s ease; }
+/* Printable QR label sheet: hide the app chrome and the page, keep only the open modal */
+@media print {
+  .sidebar, .topbar, .toast-stack, .storage-banner { display: none !important; }
+  .main-wrapper { margin-left: 0 !important; }
+  .assets-view > *:not(.modal-backdrop) { display: none !important; }
+  .assets-view .modal-backdrop { position: static; padding: 0; background: none; backdrop-filter: none; }
+  .assets-view .modal-box { max-height: none; box-shadow: none; }
+  .assets-view .modal-header .btn { display: none; }
+}

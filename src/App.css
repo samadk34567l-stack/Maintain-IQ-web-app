@@ -1,0 +1,8 @@
+.app-shell { min-height: 100vh; background: var(--slate-50); }
+.main-wrapper { display: flex; flex-direction: column; min-height: 100vh; transition: margin-left .2s ease; }
+@media (min-width: 1024px) {
+  .main-wrapper { margin-left: 256px; }
+  .main-wrapper.collapsed { margin-left: 80px; }
+}
+.page-content { flex: 1; width: 100%; max-width: 1400px; margin: 0 auto; padding: 16px; }
+@media (min-width: 1024px) { .page-content { padding: 28px; } }

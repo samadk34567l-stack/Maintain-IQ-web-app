@@ -1,0 +1,11 @@
+.ai-triage-view .tri-placeholder { min-height: 280px; justify-content: center; }
+.tri-stages { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.tri-stages li { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--slate-400); transition: color .2s ease; }
+.tri-stages li.now { color: var(--blue-700); font-weight: 700; }
+.tri-stages li.done { color: var(--emerald-700); }
+.tri-stage-dot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid currentColor; }
+.tri-h3 { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; font-size: 12px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; color: var(--slate-500); }
+.tri-hr { border: none; border-top: 1px solid var(--slate-100); }
+.tri-rule { padding: 10px 12px; background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); }
+.tri-kw { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.tri-kw .chip { padding: 2px 8px; font-size: 10.5px; }

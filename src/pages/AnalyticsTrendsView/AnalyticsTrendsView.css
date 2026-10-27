@@ -1,0 +1,3 @@
+.analytics-view .recharts-cartesian-axis-tick-value, .analytics-view .recharts-polar-angle-axis-tick-value, .analytics-view .recharts-legend-item-text { font-size: 11px; fill: var(--slate-500); }
+.analytics-view .recharts-tooltip-wrapper { outline: none; }
+.analytics-view .recharts-default-tooltip { border-radius: 10px !important; border-color: var(--slate-200) !important; box-shadow: var(--shadow-md); font-size: 12px; }

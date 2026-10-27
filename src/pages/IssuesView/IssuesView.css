@@ -1,0 +1,15 @@
+.issues-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.issues-title-cell { min-width: 260px; max-width: 420px; }
+.issues-tech { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.chip button { display: inline-flex; color: inherit; }
+.issues-board { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 12px; align-items: start; }
+@media (min-width: 700px) { .issues-board { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1200px) { .issues-board { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.issues-col { background: var(--slate-100); border-radius: var(--radius-lg); padding: 10px; }
+.issues-col-head { display: flex; align-items: center; justify-content: space-between; padding: 2px 4px 10px; font-size: 12px; font-weight: 800; color: var(--navy-800); }
+.issues-col-body { display: flex; flex-direction: column; gap: 8px; }
+.issues-col-empty { padding: 16px 0; text-align: center; }
+.issues-card { display: flex; flex-direction: column; gap: 6px; padding: 12px; text-align: left; background: var(--white); border: 1px solid var(--slate-200); border-radius: var(--radius-md); box-shadow: var(--shadow-xs); transition: border-color .15s ease, box-shadow .15s ease; }
+.issues-card:hover:not(:disabled) { border-color: var(--blue-500); box-shadow: var(--shadow-md); filter: none; }
+.issues-card-title { font-size: 12.5px; line-height: 1.35; }
+.issues-card-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 2px; }

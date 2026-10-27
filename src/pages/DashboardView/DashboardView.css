@@ -1,0 +1,6 @@
+.kpi-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 16px; }
+@media (min-width: 640px) { .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .kpi-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+.kpi-card { padding: 16px; background: var(--white); border: 1px solid var(--slate-200); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); cursor: pointer; transition: border-color .15s ease, box-shadow .15s ease; }
+.kpi-card:hover { border-color: var(--blue-500); box-shadow: var(--shadow-md); }
+.dashboard-view .recharts-cartesian-axis-tick-value, .dashboard-view .recharts-legend-item-text { font-size: 11px; fill: var(--slate-500); }

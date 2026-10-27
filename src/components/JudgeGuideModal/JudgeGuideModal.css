@@ -1,0 +1,2 @@
+.judge-step { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px; background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-lg); }
+.judge-step code { padding: 1px 6px; border-radius: 6px; background: var(--slate-200); color: var(--navy-800); }

@@ -1,0 +1,16 @@
+.hist-count { padding: 0 6px; font-size: 10.5px; font-weight: 700; background: rgba(15, 23, 42, 0.08); border-radius: 9999px; }
+.chip.on .hist-count { background: rgba(255, 255, 255, 0.25); }
+.hist-list { list-style: none; padding: 4px 16px; }
+.hist-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--slate-100); }
+.hist-item:last-child { border-bottom: none; }
+.hist-icon { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid transparent; }
+.hist-icon.tone-warn { background: var(--amber-50); color: var(--amber-700); border-color: #fde68a; }
+.hist-icon.tone-info { background: var(--blue-50); color: var(--blue-700); border-color: #bfdbfe; }
+.hist-icon.tone-danger { background: var(--rose-50); color: var(--rose-700); border-color: #fecdd3; }
+.hist-icon.tone-purple { background: var(--purple-50); color: var(--purple-700); border-color: #ddd6fe; }
+.hist-icon.tone-good { background: var(--emerald-50); color: var(--emerald-700); border-color: #a7f3d0; }
+.hist-icon.tone-neutral { background: var(--slate-100); color: var(--slate-600); border-color: var(--slate-200); }
+.hist-body { flex: 1; min-width: 0; }
+.hist-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; }
+.hist-desc { margin-top: 2px; font-size: 12.5px; line-height: 1.55; color: var(--navy-800); }
+.hist-links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; }

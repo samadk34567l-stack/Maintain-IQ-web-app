@@ -1,0 +1,3 @@
+.notif-panel { position: absolute; top: 100%; right: 0; z-index: 50; width: 320px; max-width: calc(100vw - 32px); margin-top: 8px; background: var(--white); border: 1px solid var(--slate-200); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; }
+.notif-item { display: block; width: 100%; padding: 12px; text-align: left; transition: background-color .15s ease; }
+.notif-item:hover:not(:disabled) { background: var(--slate-50); filter: none; }

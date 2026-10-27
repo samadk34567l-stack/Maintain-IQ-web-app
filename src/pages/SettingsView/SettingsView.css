@@ -1,0 +1,8 @@
+.set-profile { display: flex; align-items: center; gap: 12px; }
+.set-avatar { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; font-size: 15px; font-weight: 800; color: var(--white); background: var(--blue-600); border-radius: 50%; }
+.set-role-switch { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 12px; background: var(--slate-50); border: 1px dashed var(--slate-300); border-radius: var(--radius-md); }
+.set-counts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (min-width: 640px) { .set-counts { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.set-counts > div { display: flex; flex-direction: column; padding: 10px 12px; background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); }
+.set-counts b { font-size: 18px; font-weight: 800; color: var(--navy-900); }
+.set-counts span { font-size: 11px; color: var(--slate-500); }
